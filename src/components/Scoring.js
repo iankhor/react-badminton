@@ -30,14 +30,15 @@ class Scoring extends Component {
     }
 
 
-
     _AddScore(e){
         switch (e.target.innerHTML) {
             case labels.opponentOne:
-                console.log('op 1')
+                this.setState({opponentOne: this.state.opponentOne + 1})
+                // console.log('op 1')
                 break
             case labels.opponentTwo:
-                console.log('op 2')
+                this.setState({opponentTwo: this.state.opponentTwo + 1})
+                // console.log('op 2')
                 break
             default:
                 console.log('error')
